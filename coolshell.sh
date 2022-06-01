@@ -1,5 +1,5 @@
 #/bin/sh
 
-apt install -yq \
+sudo apt install -yq \
   bat 
 exec zsh
