@@ -1,2 +1,1 @@
-alias bat="batcat"
-alias moretools="sudo apt install bat figlet"
+alias moretools="sudo apt install -y zsh bat figlet"
