@@ -2,7 +2,7 @@
 
 #
 # Run this with:
-# curl "https://raw.githubusercontent.com/bjblazko/gcp-shell/main/install.sh" | /bin/bash
+# curl "https://raw.githubusercontent.com/bjblazko/curated-shell/main/install.sh" | /bin/bash
 #
 
 echo "Install stuff..."
