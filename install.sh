@@ -1,8 +1,7 @@
 #!/bin/sh
 
 #
-# Run this with:
-# curl "https://raw.githubusercontent.com/bjblazko/curated-shell/main/install.sh" | /bin/bash
+# See README.md
 #
 
 echo "Install stuff..."
@@ -14,7 +13,7 @@ curl -o ~/.p10k.zsh "https://raw.githubusercontent.com/bjblazko/gcp-shell/main/r
 curl -o ~/.zshrc "https://raw.githubusercontent.com/bjblazko/gcp-shell/main/resources/zshrc"
 chmod 0700 ~/.p10k.zsh
 chmod 0700 ~/.zshrc
-echo "apt install -yq batcat figlet"
+echo "sudo apt install -yq zsh bat figlet"
 echo "exec zsh" >> ~/.bashrc
 
 echo 'Done'.
