@@ -10,19 +10,19 @@ sudo apt-get -y install zsh
 
 [ -d "~/powerlevel10k" ] && rm -rf ~/powerlevel10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
-curl -o ~/.p10k.zsh "https://raw.githubusercontent.com/bjblazko/gcp-shell/main/p10k.zsh"
-curl -o ~/.zshrc "https://raw.githubusercontent.com/bjblazko/gcp-shell/main/zshrc"
-curl -o ~/.bash_aliases "https://raw.githubusercontent.com/bjblazko/gcp-shell/main/bash_aliases"
+curl -o ~/.p10k.zsh "https://raw.githubusercontent.com/bjblazko/gcp-shell/main/resources/p10k.zsh"
+curl -o ~/.zshrc "https://raw.githubusercontent.com/bjblazko/gcp-shell/main/resources/zshrc"
+curl -o ~/.bash_aliases "https://raw.githubusercontent.com/bjblazko/gcp-shell/main/resources/bash_aliases"
 chmod 0700 ~/.p10k.zsh
 chmod 0700 ~/.bash_aliases
 chmod 0700 ~/.zshrc
 
 echo 'Done'.
-echo '                      _           _       _          _ _'
-echo '  ___ _   _ _ __ __ _| |_ ___  __| |  ___| |__   ___| | |'
-echo ' / __| | | | '__/ _` | __/ _ \/ _` | / __| '_ \ / _ \ | |'
-echo '| (__| |_| | | | (_| | ||  __/ (_| | \__ \ | | |  __/ | |'
-echo ' \___|\__,_|_|  \__,_|\__\___|\__,_| |___/_| |_|\___|_|_|'
+echo '  ____  ____ ____        _          _ _ '
+echo ' / ___|/ ___|  _ \   ___| |__   ___| | |'
+echo '| |  _| |   | |_) | / __|  _ \ / _ \ | |'
+echo '| |_| | |___|  __/  \__ \ | | |  __/ | |'
+echo ' \____|\____|_|     |___/_| |_|\___|_|_|'
 echo 'Visit https://github.com/bjblazko/gcp-shell'
 echo
 echo '!!! EACH TIME you open a new ephemereal shell, enter "restore-shell" to install stuff again...'
