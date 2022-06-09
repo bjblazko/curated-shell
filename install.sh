@@ -12,10 +12,10 @@ sudo apt-get -y install zsh
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 curl -o ~/.p10k.zsh "https://raw.githubusercontent.com/bjblazko/gcp-shell/main/resources/p10k.zsh"
 curl -o ~/.zshrc "https://raw.githubusercontent.com/bjblazko/gcp-shell/main/resources/zshrc"
-curl -o ~/.bash_aliases "https://raw.githubusercontent.com/bjblazko/gcp-shell/main/resources/bash_aliases"
 chmod 0700 ~/.p10k.zsh
-chmod 0700 ~/.bash_aliases
 chmod 0700 ~/.zshrc
+echo "apt install -yq batcat figlet"
+echo "exec zsh" >> ~/.bashrc
 
 echo 'Done'.
 echo '  ____  ____ ____        _          _ _ '
@@ -25,6 +25,4 @@ echo '| |_| | |___|  __/  \__ \ | | |  __/ | |'
 echo ' \____|\____|_|     |___/_| |_|\___|_|_|'
 echo 'Visit https://github.com/bjblazko/gcp-shell'
 echo
-echo '!!! EACH TIME you open a new ephemereal shell, enter "restore-shell" to install stuff again...'
-echo
-echo 'Please enter "exec zsh" and verify with "echo $SHELL" that you are using zsh'
+echo 'Please close your shell and re-open it. Then you should enjoy the new one!'
