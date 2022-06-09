@@ -13,7 +13,9 @@ curl -o ~/.p10k.zsh "https://raw.githubusercontent.com/bjblazko/gcp-shell/main/r
 curl -o ~/.zshrc "https://raw.githubusercontent.com/bjblazko/gcp-shell/main/resources/zshrc"
 chmod 0700 ~/.p10k.zsh
 chmod 0700 ~/.zshrc
-echo "sudo apt install -yq zsh bat figlet"
+# Programs installed via apt-get will not survive since VM is killed regulary,
+# thus, let us reinstall it...
+echo 'nohup sudo apt install -yq zsh bat figlet > /dev/null 2>&1 &' >> ~/.bashrc
 echo "exec zsh" >> ~/.bashrc
 
 echo 'Done'.
