@@ -16,9 +16,6 @@ curl -o ~/.bash_aliases "https://raw.githubusercontent.com/bjblazko/gcp-shell/ma
 chmod 0700 ~/.p10k.zsh
 chmod 0700 ~/.bash_aliases
 chmod 0700 ~/.zshrc
-source ~/.bash_aliases
-source ~/.zshrc
-
 
 echo 'Done'.
 echo '                      _           _       _          _ _'
