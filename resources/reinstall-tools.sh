@@ -24,4 +24,4 @@ FX_VERSION=$(curl -s "https://api.github.com/repos/antonmedv/fx/releases/latest"
 FX_BIN="fx"
 curl -Lo "$FX_BIN" "https://github.com/antonmedv/fx/releases/latest/download/${XSV_VERSION}/fx_linux_amd64"
 chmod +x "$FX_BIN"
-sudo mv "$FX_BIN" /usr/local/bin/
+sudo mv "$FX_BIN" /usr/local/bin
