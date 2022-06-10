@@ -11,6 +11,7 @@ sudo apt-get -y install zsh
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 curl -o ~/.p10k.zsh "https://raw.githubusercontent.com/bjblazko/gcp-shell/main/resources/p10k.zsh"
 curl -o ~/.zshrc "https://raw.githubusercontent.com/bjblazko/gcp-shell/main/resources/zshrc"
+curl -o ~/.zshenv "https://raw.githubusercontent.com/bjblazko/gcp-shell/main/resources/zshenv"
 curl -o ~/gcp-shell-reinstall-tools.sh "https://raw.githubusercontent.com/bjblazko/gcp-shell/main/resources/reinstall-tools.sh"
 curl -o ~/gcp-shell.md "https://raw.githubusercontent.com/bjblazko/gcp-shell/main/README.md"
 chmod 0700 ~/.p10k.zsh
