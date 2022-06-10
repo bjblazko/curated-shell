@@ -20,8 +20,47 @@ You will need the font _MesloLGS NF_. Download them for later installation:
 Depending on your operating system, installing a font can be done with right-clicking + install
 or "opening" the font file with your file manager (Finder, Explorer, Nautilus etc.).
 
-##### Select font as monospace
+##### Browser
+
+When using the web browser to render your shell, ensure to set "MenloLGS NF" for monospaced
+fonts. For _Chrome_, this would be:
+
+* open Chrome
+* go to settings using the three dots (or [Command]+[,] in macOS)
+* open "Appearance"
+* choose "Customise fonts"
+* set "MenloLGS NF" for "fixed-with-font"
+
+![Chrome font settings](./doc/chrome-settings-font.png)
+
 ##### Using local terminal
+
+In your terminal app's settings, ensure to set the monospaced font to "MesloLGS NF".
+for example, with macOS' Terminal.app; do so as follows:
+
+* open Terminal app:
+  * [Command]+[Space]
+  * enter "terminal"
+  * enter
+* open settings with [Command]+[,]
+* choose "Profiles" and select your current profile
+* in the font section in "Text" tab, select "Change..."
+* specify "MesloLGS NF"
+
+![Change font](./doc/terminal.app.settings.png)
+
+Then, you can ssh into your GCP shell without using a web browser:
+
+```shell
+# only once
+gcloud auth login
+
+# each time you want to SSH
+gcloud cloud-shell ssh
+```
+
+This requires you to have [installed the _gcloud CLI_](https://cloud.google.com/sdk/docs/install)
+and authenticated at least once: [gcloud auth login](https://cloud.google.com/sdk/gcloud/reference/auth/login).
 
 ### Installation process
 

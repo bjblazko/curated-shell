@@ -22,6 +22,6 @@ rm -f "$XSV_TAR"
 antonmedv/fx/releases
 FX_VERSION=$(curl -s "https://api.github.com/repos/antonmedv/fx/releases/latest" | grep -Po '"tag_name": "\K[0-9.]+')
 FX_BIN="fx"
-curl -Lo "$FX_BIN" "https://github.com/antonmedv/fx/releases/latest/download/${XSV_VERSION}/fx_linux_amd64"
+curl -Lo "$FX_BIN" "https://github.com/antonmedv/fx/releases/latest/download/${FX_VERSION}/fx_linux_amd64"
 chmod +x "$FX_BIN"
 sudo mv "$FX_BIN" /usr/local/bin
