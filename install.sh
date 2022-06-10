@@ -11,10 +11,11 @@ sudo apt-get -y install zsh
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 curl -o ~/.p10k.zsh "https://raw.githubusercontent.com/bjblazko/gcp-shell/main/resources/p10k.zsh"
 curl -o ~/.zshrc "https://raw.githubusercontent.com/bjblazko/gcp-shell/main/resources/zshrc"
-curl -o ~/gcp-shell-reinstall-tools.sh "https://raw.githubusercontent.com/bjblazko/gcp-shell/main/resources/reinstall.tools.sh"
+curl -o ~/gcp-shell-reinstall-tools.sh "https://raw.githubusercontent.com/bjblazko/gcp-shell/main/resources/reinstall-tools.sh"
 curl -o ~/gcp-shell.md "https://raw.githubusercontent.com/bjblazko/gcp-shell/main/README.md"
 chmod 0700 ~/.p10k.zsh
 chmod 0700 ~/.zshrc
+chmod +x ~/gcp-shell-reinstall-tools.sh
 # Programs installed via apt-get will not survive since VM is killed regulary,
 # thus, let us reinstall it...
 echo 'nohup ~/gcp-shell-reinstall-tools.sh > /dev/null 2>&1 &' >> ~/.bashrc

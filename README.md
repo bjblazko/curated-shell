@@ -2,6 +2,8 @@
 
 Google Cloud Shell with zsh and tools. It comes with Powerline10k: https://github.com/romkatv/powerlevel10k
 
+I am from [here on Github](https://github.com/bjblazko/gcp-shell).
+
 ## Initial installation
 
 ### Requirements
